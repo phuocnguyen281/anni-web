@@ -329,15 +329,15 @@ a {
 .hero-date {
     font-family: var(--font-heading);
     font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-    color: var(--text-secondary);
+    color: #064a37;
     letter-spacing: 0.3em;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 16px;
 }
 
 .hero-subtitle {
     font-family: var(--font-body);
-    font-size: 16px;
+    font-size: 20px;
     color: #142a23;
     font-style: italic;
     font-weight: 800;
