@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anh & Vợ — 6 Năm Yêu Thương 💍</title>
+    <meta name="description" content="Kỉ niệm 6 năm ngày cưới Anh & Vợ. 04.04.2020 - 04.04.2026. Sáu năm bên nhau, mãi yêu thương.">
+    <meta property="og:title" content="Anh & Vợ — 6 Năm Yêu Thương">
+    <meta property="og:description" content="Kỉ niệm 6 năm ngày cưới. Sáu năm bên nhau, mãi yêu thương.">
+    <meta property="og:image" content="images/photo1.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Music Toggle Button -->
+    <button id="music-toggle" class="music-btn" aria-label="Toggle music">
+        <svg id="music-icon-on" class="music-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+        </svg>
+        <svg id="music-icon-off" class="music-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+            <line x1="1" y1="1" x2="23" y2="23" stroke-width="2.5"/>
+        </svg>
+    </button>
+
+    <!-- Floating Rose Petals Container -->
+    <div id="rose-petals" class="rose-petals-container" aria-hidden="true"></div>
+
+    <!-- ========== SECTION 1: HERO ========== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('images/photo1.jpg')"></div>
+        
+        <!-- Rose decorations -->
+        <div class="rose-corner rose-top-left" aria-hidden="true">
+            <svg viewBox="0 0 200 200" class="rose-svg">
+                <g opacity="0.6">
+                    <circle cx="30" cy="30" r="8" fill="#E8B4B8"/>
+                    <circle cx="50" cy="20" r="6" fill="#D4A8A8"/>
+                    <circle cx="20" cy="50" r="5" fill="#E8B4B8"/>
+                    <circle cx="45" cy="45" r="7" fill="#D4A8A8"/>
+                    <circle cx="15" cy="15" r="4" fill="#f0c8cc"/>
+                    <circle cx="60" cy="40" r="4" fill="#E8B4B8"/>
+                    <path d="M10,70 Q30,60 50,65 Q60,55 80,60" stroke="#B8D8D0" stroke-width="1" fill="none" opacity="0.5"/>
+                    <path d="M5,50 Q20,40 35,50" stroke="#c5ddd7" stroke-width="0.8" fill="none" opacity="0.4"/>
+                </g>
+            </svg>
+        </div>
+        <div class="rose-corner rose-bottom-right" aria-hidden="true">
+            <svg viewBox="0 0 200 200" class="rose-svg">
+                <g opacity="0.6">
+                    <circle cx="170" cy="170" r="8" fill="#E8B4B8"/>
+                    <circle cx="150" cy="180" r="6" fill="#D4A8A8"/>
+                    <circle cx="180" cy="150" r="5" fill="#E8B4B8"/>
+                    <circle cx="155" cy="155" r="7" fill="#D4A8A8"/>
+                    <circle cx="185" cy="185" r="4" fill="#f0c8cc"/>
+                    <circle cx="140" cy="160" r="4" fill="#E8B4B8"/>
+                    <path d="M120,140 Q150,130 170,145 Q175,155 190,150" stroke="#B8D8D0" stroke-width="1" fill="none" opacity="0.5"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge fade-in">
+                <span class="badge-icon">💍</span>
+                <span>6 Năm Yêu Thương</span>
+            </div>
+            <h1 class="hero-names fade-in delay-1">
+                <span class="name-script">Anh</span>
+                <span class="name-ampersand">&</span>
+                <span class="name-script">Mình</span>
+            </h1>
+            <p class="hero-date fade-in delay-2">04 · 04 · 2020</p>
+            <p class="hero-subtitle fade-in delay-3">Sáu năm bên nhau, ngàn năm vẫn yêu</p>
+            <a href="#counter" class="hero-scroll-btn fade-in delay-4" aria-label="Scroll down">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 2: LOVE COUNTER ========== -->
+    <section id="counter" class="counter-section">
+        <div class="section-rose-divider" aria-hidden="true">
+            <svg viewBox="0 0 400 30" class="divider-svg">
+                <line x1="0" y1="15" x2="160" y2="15" stroke="#D4A8A8" stroke-width="0.5" opacity="0.5"/>
+                <circle cx="170" cy="15" r="3" fill="#D4A8A8" opacity="0.6"/>
+                <circle cx="185" cy="10" r="2" fill="#E8B4B8" opacity="0.5"/>
+                <circle cx="200" cy="15" r="4" fill="#E8B4B8" opacity="0.7"/>
+                <circle cx="215" cy="10" r="2" fill="#D4A8A8" opacity="0.5"/>
+                <circle cx="230" cy="15" r="3" fill="#D4A8A8" opacity="0.6"/>
+                <line x1="240" y1="15" x2="400" y2="15" stroke="#D4A8A8" stroke-width="0.5" opacity="0.5"/>
+            </svg>
+        </div>
+        <div class="container">
+            <h2 class="section-title scroll-fade">
+                <span class="title-icon">💕</span>
+                Bên Nhau Từng Khoảnh Khắc
+            </h2>
+            <p class="section-subtitle scroll-fade">Từ ngày 04.04.2020 đến hôm nay</p>
+            <div class="counter-grid">
+                <div class="counter-card glass scroll-fade">
+                    <div class="counter-number" id="counter-years">0</div>
+                    <div class="counter-label">Năm</div>
+                    <div class="counter-glow"></div>
+                </div>
+                <div class="counter-card glass scroll-fade">
+                    <div class="counter-number" id="counter-months">0</div>
+                    <div class="counter-label">Tháng</div>
+                    <div class="counter-glow"></div>
+                </div>
+                <div class="counter-card glass scroll-fade">
+                    <div class="counter-number" id="counter-days">0</div>
+                    <div class="counter-label">Ngày</div>
+                    <div class="counter-glow"></div>
+                </div>
+                <div class="counter-card glass scroll-fade">
+                    <div class="counter-number" id="counter-hours">0</div>
+                    <div class="counter-label">Giờ</div>
+                    <div class="counter-glow"></div>
+                </div>
+            </div>
+            <p class="counter-note scroll-fade">✨ Và vẫn đang đếm tiếp...</p>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 3: PHOTO GALLERY ========== -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title scroll-fade">
+                <span class="title-icon">📸</span>
+                Khoảnh Khắc Của Chúng Ta
+            </h2>
+            <p class="section-subtitle scroll-fade">Từ ngày cưới đến những chuyến đi bên nhau</p>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-large scroll-fade" data-index="0">
+                    <img src="images/photo1.jpg" alt="Mình và Vợ - Ngày cưới" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Nụ cười hạnh phúc nhất</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-fade" data-index="1">
+                    <img src="images/photo2.jpg" alt="Vợ tựa vai mình" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Tựa vai chồng, bình yên nhất</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-fade" data-index="2">
+                    <img src="images/photo3.jpg" alt="Khoảnh khắc dịu dàng" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Dịu dàng bên nhau</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-fade" data-index="3">
+                    <img src="images/photo4.jpg" alt="Trao nhẫn cưới" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Khoảnh khắc trao nhẫn</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-large scroll-fade" data-index="4">
+                    <img src="images/photo5.jpg" alt="Toàn cảnh ngày cưới" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Ngày đẹp nhất đời mình</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-fade" data-index="5">
+                    <img src="images/photo6.jpg" alt="Selfie đi chơi mặc áo mưa" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Mưa hay nắng vẫn vui vẻ 🌧️</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-fade" data-index="6">
+                    <img src="images/photo7.jpg" alt="Vợ selfie xinh đẹp" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Có mình làm background</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-fade" data-index="7">
+                    <img src="images/photo8.jpg" alt="Mình pose dáng" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Mình cũng biết pose đấy 💪</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-large scroll-fade" data-index="8">
+                    <img src="images/photo9.jpg" alt="Date night" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Date night với homie 🌃</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-fade" data-index="9">
+                    <img src="images/photo10.jpg" alt="Vợ ở safari" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Vợ và bạn mới ở safari 🦜</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-large scroll-fade" data-index="10">
+                    <img src="images/photo11.jpg" alt="Selfie buổi tối" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Nụ cười bên nhau buổi tối 🌃</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-fade" data-index="11">
+                    <img src="images/photo12.jpg" alt="Couple ở Đà Lạt" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Đà Lạt mộng mơ cùng nhau 🌹</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-fade" data-index="12">
+                    <img src="images/photo13.jpg" alt="Vợ ở sân bay Phú Quốc" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Check-in Phú Quốc les gooo ✈️</span>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-fade" data-index="13">
+                    <img src="images/photo14.jpg" alt="Sneakers couple" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Giày couple là phải có 👟</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-large scroll-fade" data-index="14">
+                    <img src="images/photo15.jpg" alt="Vợ mình ở chùa" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Tết bên nhau, hoa đào bên ta 🌸</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 4: LOVE LETTER ========== -->
+    <section id="love-letter" class="love-section">
+        <div class="love-bg-roses" aria-hidden="true"></div>
+        <div class="container">
+            <h2 class="section-title scroll-fade">
+                <span class="title-icon">💌</span>
+                Gửi Homie — Vợ Iu
+            </h2>
+            <div class="love-quotes">
+                <blockquote class="love-quote scroll-fade">
+                    <div class="quote-rose" aria-hidden="true">🌹</div>
+                    <p>"Sáu năm trước, chồng đã là người may mắn nhất khi được nắm tay em bước vào lễ đường. Sáu năm sau, chồng vẫn thấy mình may mắn hơn bất kỳ ai trên thế giới này."</p>
+                </blockquote>
+                <blockquote class="love-quote scroll-fade">
+                    <div class="quote-rose" aria-hidden="true">🌹</div>
+                    <p>"Cảm ơn em đã luôn bên chồng, trong những ngày dông bão lẫn những ngày nắng đẹp. Em là bến bờ bình yên nhất của đời chồng."</p>
+                </blockquote>
+                <blockquote class="love-quote scroll-fade">
+                    <div class="quote-rose" aria-hidden="true">🌹</div>
+                    <p>"Mỗi sáng thức dậy nhìn thấy em, chồng biết rằng cuộc đời này thật đáng sống. Em không chỉ là vợ chồng, em là cả thế giới của chồng."</p>
+                </blockquote>
+                <blockquote class="love-quote scroll-fade">
+                    <div class="quote-rose" aria-hidden="true">🌹</div>
+                    <p>"Nếu được chọn lại, chồng vẫn sẽ chọn em — trong kiếp này và mọi kiếp sau. Vì em, Vợ ơi, là best collab của đời chồng."</p>
+                </blockquote>
+                <blockquote class="love-quote scroll-fade">
+                    <div class="quote-rose" aria-hidden="true">🌹</div>
+                    <p>"Sáu năm qua, chúng ta đã cùng nhau xây nên biết bao kỷ niệm. Và chồng hứa, những năm tiếp theo sẽ còn vibe hơn nữa. Iu em mãi mãi, Vợ ơi."</p>
+                </blockquote>
+                <blockquote class="love-quote scroll-fade">
+                    <div class="quote-rose" aria-hidden="true">🌹</div>
+                    <p>"Em là hoa hồng đẹp nhất trong khu vườn đời chồng. Dù thời gian có trôi qua bao lâu, tình yêu chồng dành cho em vẫn luôn tươi mới như ngày đầu."</p>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 5: TIMELINE ========== -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title scroll-fade">
+                <span class="title-icon">⏰</span>
+                Hành Trình Của Chúng Ta
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item scroll-fade" data-year="2020">
+                    <div class="timeline-dot">
+                        <span>💒</span>
+                    </div>
+                    <div class="timeline-content glass">
+                        <h3>04.04.2020</h3>
+                        <p>Ngày chúng ta về chung một nhà. Ngày đẹp nhất, hạnh phúc nhất, khi chồng chính thức được gọi em là "vợ".</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-fade" data-year="2021">
+                    <div class="timeline-dot">
+                        <span>🌱</span>
+                    </div>
+                    <div class="timeline-content glass">
+                        <h3>2021</h3>
+                        <p>Năm đầu tiên — cùng nhau vượt qua mọi thử thách. Học cách yêu thương, thấu hiểu và nhường nhịn nhau mỗi ngày.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-fade" data-year="2022">
+                    <div class="timeline-dot">
+                        <span>🏡</span>
+                    </div>
+                    <div class="timeline-content glass">
+                        <h3>2022</h3>
+                        <p>Xây dựng tổ ấm nhỏ. Từng viên gạch, từng góc nhà đều chứa chan tình yêu của hai đứa mình.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-fade" data-year="2023">
+                    <div class="timeline-dot">
+                        <span>🌸</span>
+                    </div>
+                    <div class="timeline-content glass">
+                        <h3>2023</h3>
+                        <p>Bên nhau qua bao mùa xuân hạ thu đông. Mỗi mùa trôi qua, tình yêu càng thêm sâu đậm.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-fade" data-year="2024">
+                    <div class="timeline-dot">
+                        <span>💪</span>
+                    </div>
+                    <div class="timeline-content glass">
+                        <h3>2024</h3>
+                        <p>Cùng nhau trưởng thành, cùng nhau mạnh mẽ hơn. Có em bên cạnh, chồng không sợ bất cứ điều gì.</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-fade" data-year="2025">
+                    <div class="timeline-dot">
+                        <span>✨</span>
+                    </div>
+                    <div class="timeline-content glass">
+                        <h3>2025</h3>
+                        <p>Tình yêu ngày càng chín muồi. Nhìn lại chặng đường đã qua, chồng biết ơn vì có em đồng hành.</p>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-item-special scroll-fade" data-year="2026">
+                    <div class="timeline-dot timeline-dot-special">
+                        <span>💍</span>
+                    </div>
+                    <div class="timeline-content glass timeline-content-special">
+                        <h3>04.04.2026 — Hôm Nay</h3>
+                        <p>6 năm bên nhau. Và hôm nay, chồng có một điều đặc biệt muốn nói với em...</p>
+                        <a href="#proposal" class="timeline-cta">Xem tiếp →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 6: PROPOSAL ========== -->
+    <section id="proposal" class="proposal-section">
+        <div class="proposal-bg" style="background-image: url('images/photo4.jpg')"></div>
+        <div class="proposal-overlay"></div>
+        <div class="proposal-roses-falling" id="proposal-roses" aria-hidden="true"></div>
+        
+        <div class="proposal-content">
+            <div class="proposal-ring scroll-fade">
+                <div class="ring-animation">
+                    <svg viewBox="0 0 100 100" class="ring-svg">
+                        <circle cx="50" cy="50" r="30" fill="none" stroke="#C8A96E" stroke-width="3"/>
+                        <circle cx="50" cy="20" r="6" fill="#C8A96E"/>
+                        <circle cx="50" cy="20" r="3" fill="#fff" opacity="0.8"/>
+                        <circle cx="50" cy="50" r="30" fill="none" stroke="url(#ring-gradient)" stroke-width="1.5" opacity="0.5"/>
+                        <defs>
+                            <linearGradient id="ring-gradient">
+                                <stop offset="0%" stop-color="#C8A96E"/>
+                                <stop offset="100%" stop-color="#E8D5A8"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="proposal-text">
+                <p class="proposal-ai-note scroll-fade" style="font-weight: 800;">✨ Trang này có thể do công nghệ tương lại bịa ra, nhưng những lời dưới đây là thật — từ chính trái tim của anh gửi đến mình.</p>
+                <p class="proposal-intro scroll-fade">Vợ ơi,</p>
+                <p class="proposal-main scroll-fade">Anh chưa bao giờ chính thức quỳ xuống và cầu hôn mình...</p>
+                <p class="proposal-main scroll-fade">Hôm nay, sau 6 năm bên nhau, anh muốn nói điều mà đáng lẽ chồng phải nói từ lâu:</p>
+                <div class="proposal-question scroll-fade">
+                    <p class="proposal-big-text">"Vợ ơi,<br>em có đồng ý tiếp tục làm wifey của anh<br>thêm 60 năm nữa không?"</p>
+                </div>
+                <p class="proposal-signature scroll-fade">— Vợ, forever your homie 💍</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 7: FOOTER ========== -->
+    <footer id="footer" class="footer-section">
+        <div class="footer-roses" aria-hidden="true">
+            <div class="footer-rose-left">🌹</div>
+            <div class="footer-rose-right">🌹</div>
+        </div>
+        <div class="container">
+            <div class="footer-heart scroll-fade">
+                <svg viewBox="0 0 100 100" class="heart-svg">
+                    <path d="M50 88 C25 65, 0 45, 0 25 C0 10, 12 0, 25 0 C35 0, 45 8, 50 18 C55 8, 65 0, 75 0 C88 0, 100 10, 100 25 C100 45, 75 65, 50 88Z" fill="url(#heart-gradient)"/>
+                    <defs>
+                        <linearGradient id="heart-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#E8B4B8"/>
+                            <stop offset="100%" stop-color="#D4A8A8"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <p class="footer-text scroll-fade">Anh & Vợ</p>
+            <p class="footer-love scroll-fade">Iu em mãi nha ❤️</p>
+            <p class="footer-date scroll-fade">04.04.2020 — ∞</p>
+        </div>
+    </footer>
+
+    <!-- ========== LIGHTBOX ========== -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Đóng">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Ảnh trước">‹</button>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Ảnh tiếp">›</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Wedding photo">
+        </div>
+    </div>
+
+    <!-- YouTube Background Music (hidden) -->
+    <iframe id="yt-player" 
+        src="https://www.youtube.com/embed/4wLl98JpaWE?autoplay=0&loop=1&playlist=4wLl98JpaWE&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+        style="position:fixed;width:1px;height:1px;bottom:0;right:0;opacity:0;pointer-events:none;" 
+        allow="autoplay; encrypted-media" 
+        frameborder="0" 
+        title="Background Music"
+    ></iframe>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
